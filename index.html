@@ -16,28 +16,29 @@
       font-family: 'Poppins', sans-serif;
       background-color: #121212;
       color: #f0f0f0;
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 18px;
     }
 
     header {
       background: #1e1e1e;
-      padding: 1rem 2rem;
+      padding: 2rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: 2.8rem;
     }
 
     nav {
-      margin-top: 0.5rem;
+      margin-top: 1rem;
     }
 
     nav a {
       margin: 0 1rem;
       color: #bbb;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     nav a:hover {
@@ -45,27 +46,32 @@
     }
 
     section {
-      padding: 3rem 2rem;
-      max-width: 900px;
+      padding: 4rem 2rem;
+      max-width: 1000px;
       margin: auto;
     }
 
     h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
       color: #00ffaa;
+      font-size: 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
     }
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
 
     .project-card {
       background: #1e1e1e;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0, 255, 170, 0.1);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 255, 170, 0.1);
     }
 
     .project-card h3 {
@@ -75,14 +81,14 @@
     .project-card a {
       color: #00ffaa;
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
 
     footer {
       text-align: center;
       padding: 2rem;
       background: #1e1e1e;
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: #666;
     }
 
@@ -91,14 +97,24 @@
         display: block;
         margin: 0.5rem 0;
       }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .badge {
+      width: 200px;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Rohan Deshmukh</h1>
+    <h1>Rohan Rajendra Deshmukh</h1>
     <nav>
       <a href="#about">About</a>
+      <a href="#tryhackme">TryHackMe</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -107,35 +123,53 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I’m Rohan, an aspiring Red Teamer passionate about cybersecurity, Linux, and ethical hacking. I'm in the top 1% on TryHackMe and hold certifications from Prodigy InfoTech and TryHackMe. Let’s break stuff — ethically.
+      I'm Rohan Rajendra Deshmukh, a cybersecurity enthusiast and an aspiring red teamer with a strong background in ethical hacking, penetration testing, and vulnerability assessment. I hold an MCA and BCA and have completed internships at Prodigy InfoTech and The Red User. I'm deeply passionate about offensive security and specialize in Linux environments, CTFs, and hands-on learning platforms like TryHackMe.
     </p>
+    <p>
+      With a solid understanding of tools and techniques used in ethical hacking, I aim to secure digital landscapes by thinking like an attacker. My dedication to continuous learning has placed me in the top 1% on TryHackMe, and I'm steadily building a career rooted in skill, ethics, and real-world experience.
+    </p>
+  </section>
+
+  <section id="tryhackme">
+    <h2>TryHackMe Profile</h2>
+    <p>
+      I'm consistently ranked in the <strong>Top 1%</strong> on TryHackMe and currently hold the title of <strong>Cyber Crusader</strong>. I’ve completed rooms on web exploitation, Linux, Windows privilege escalation, and more. I hold the "Junior Penetration Tester" and "Web Fundamentals" certifications from TryHackMe.
+    </p>
+    <a href="https://tryhackme.com/p/gitrohan01" target="_blank">
+      <img src="https://tryhackme-badges.s3.amazonaws.com/gitrohan01.png" alt="TryHackMe Badge" class="badge">
+    </a>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects">
       <div class="project-card">
-        <h3>Keylogger (Ethical Purpose)</h3>
-        <p>A Python-based keylogger built during my internship to demonstrate keystroke capturing techniques.</p>
+        <h3>Keylogger (Ethical)</h3>
+        <p>Python-based keylogger developed to demonstrate keystroke capturing, created during my internship.</p>
         <a href="#">GitHub Repo</a>
       </div>
       <div class="project-card">
         <h3>Password Strength Checker</h3>
-        <p>A tool to check password complexity, including brute-force resistance and entropy evaluation.</p>
+        <p>Analyzes password complexity, detects weak patterns, and estimates brute-force resistance.</p>
         <a href="#">GitHub Repo</a>
       </div>
-      <!-- Add more projects -->
+      <div class="project-card">
+        <h3>WiFi Tester (IoT Project)</h3>
+        <p>A project involving real-world WiFi signal strength mapping and reporting using microcontrollers.</p>
+        <a href="#">GitHub Repo</a>
+      </div>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:rohandeshmukh@example.com" style="color:#00ffaa;">rohandeshmukh@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/rohan" style="color:#00ffaa;">linkedin.com/in/rohan</a></p>
+    <p>Email: <a href="mailto:rohandeshmukh1434@gmail.com" style="color:#00ffaa;">rohandeshmukh@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/rohanrdx07deshmukh/" style="color:#00ffaa;">linkedin.com/in/rohan</a></p>
+    <p>GitHub: <a href="https://github.com/gitrohan01" style="color:#00ffaa;">github.com/gitrohan01</a></p>
   </section>
 
   <footer>
-    © 2025 Rohan Deshmukh | Portfolio
+    © 2025 Rohan Deshmukh | All rights reserved.
   </footer>
 </body>
 </html>
