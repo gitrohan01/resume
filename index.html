@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rohan Deshmukh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e1e1e;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #bbb;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #00ffaa;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #00ffaa;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .project-card {
+      background: #1e1e1e;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 255, 170, 0.1);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card a {
+      color: #00ffaa;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1e1e1e;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rohan Deshmukh</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Rohan, an aspiring Red Teamer passionate about cybersecurity, Linux, and ethical hacking. I'm in the top 1% on TryHackMe and hold certifications from Prodigy InfoTech and TryHackMe. Let’s break stuff — ethically.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Keylogger (Ethical Purpose)</h3>
+        <p>A Python-based keylogger built during my internship to demonstrate keystroke capturing techniques.</p>
+        <a href="#">GitHub Repo</a>
+      </div>
+      <div class="project-card">
+        <h3>Password Strength Checker</h3>
+        <p>A tool to check password complexity, including brute-force resistance and entropy evaluation.</p>
+        <a href="#">GitHub Repo</a>
+      </div>
+      <!-- Add more projects -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rohandeshmukh@example.com" style="color:#00ffaa;">rohandeshmukh@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/rohan" style="color:#00ffaa;">linkedin.com/in/rohan</a></p>
+  </section>
+
+  <footer>
+    © 2025 Rohan Deshmukh | Portfolio
+  </footer>
+</body>
+</html>
